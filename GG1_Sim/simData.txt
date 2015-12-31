@@ -1,0 +1,285 @@
+=================================================================
+ Andrey Barsuikov
+
+-----------------------------------------------------------------
+The G/G/1 System simulated here follows all the possible conbinations of 
+the following distributions:
+
+# Distribution of interarrival time    | # Distribution of service time 
+1 Constant value: 2 sec                | 1 Constant value: 1 sec 
+2 Exponential with mean value of 2 sec | 2 Exponential with mean value of 1 sec
+3 Uniform from 1 to 3 seconds          | 3 Uniform from 1 to 2 seconds
+------------------------------------------------------------------
+
+   ________________________ G / G / 1 _____________________
+   |                                                      |
+>> |  Q ===> [ (J)(J)(J)(J) ] ==> S [ (J) ]               | >> X 
+   |______________________________________________________|
+
+------------------------------------------------------------------
+
+
+a - Arrival Distribution               | s - Service time distribution
+simU - Simulated server utilization    | an - Analytical server Utilization
+E%U - Utilization % error              | E%R - Response time % error
+simR - Simulated Response time         | anR - Analytical responnse time
+simQ - Simulated Queue size average    | anQ - Analytical Queue size average
+simW - Simulated average wait time     | anW - Analytical average wait time
+simA - Average simulated interratival  | simS - Average simulated service time
+
+Random seed: time(0)
+------------------------------------------------------------------
+
+G/G/1 Simulator - Simulating 2000 jobs.  
+a	s	simU	anU	errU 	simR	anR	errR	simQ	anQ	errQ	simW	anW	errW	simA	simS
+1	1	0.5	0.5	-0.025	1	1	0	0.5	0.5	-0.025	0	0	nan	2	1
+
+
+Queue Distribution graph: (each | ~= 20000 occurances)
+Q0:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q1:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q2:
+Q3:
+Q4:
+Q5:
+Q6:
+Q7:
+Q8:
+Q9:
+
+Actually Queue size occurances
+Q0: 2001000
+Q1: 2000000
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+
+a	s	simU	anU	errU 	simR	anR	errR	simQ	anQ	errQ	simW	anW	errW	simA	simS
+1	2	0.507	0.5	1.38	1.28	1.2	6.46	0.639	0.6	6.45	0.264	0.2	32.1	2	1.01
+
+
+Queue Distribution graph: (each | ~= 20000 occurances)
+Q0:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q1:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q2:||||||||||||||||||
+Q3:||||
+Q4:|
+Q5:|
+Q6:
+Q7:
+Q8:
+Q9:
+
+Actually Queue size occurances
+Q0: 1972685
+Q1: 1601151
+Q2: 340260
+Q3: 73597
+Q4: 11450
+Q5: 1357
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+
+a	s	simU	anU	errU 	simR	anR	errR	simQ	anQ	errQ	simW	anW	errW	simA	simS
+1	3	0.753	0.75	0.354	1.51	1.55	-2.69	0.753	0.774	-2.73	0.000504	0.0476	-98.9	2	1.51
+
+
+Queue Distribution graph: (each | ~= 20000 occurances)
+Q0:||||||||||||||||||||||||||||||||||||||||||||||||||
+Q1:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q2:
+Q3:
+Q4:
+Q5:
+Q6:
+Q7:
+Q8:
+Q9:
+
+Actually Queue size occurances
+Q0: 989844
+Q1: 3012047
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+
+a	s	simU	anU	errU 	simR	anR	errR	simQ	anQ	errQ	simW	anW	errW	simA	simS
+2	1	0.512	0.5	2.44	1.54	1.5	2.73	0.789	0.75	5.15	0.541	0.5	8.2	1.95	1
+
+
+Queue Distribution graph: (each | ~= 20000 occurances)
+Q0:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q1:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q2:|||||||||||||||||||||||||
+Q3:||||||||
+Q4:|||
+Q5:|
+Q6:|
+Q7:|
+Q8:
+Q9:
+
+Actually Queue size occurances
+Q0: 1906621
+Q1: 1274780
+Q2: 487951
+Q3: 157994
+Q4: 51473
+Q5: 19233
+Q6: 5748
+Q7: 2821
+Q8: 0
+Q9: 0
+
+a	s	simU	anU	errU 	simR	anR	errR	simQ	anQ	errQ	simW	anW	errW	simA	simS
+2	2	0.523	0.5	4.63	2.14	2	6.82	1.09	1	9.49	1.12	1	11.7	1.95	1.02
+
+
+Queue Distribution graph: (each | ~= 20000 occurances)
+Q0:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q1:||||||||||||||||||||||||||||||||||||||||||||||||||
+Q2:|||||||||||||||||||||||||
+Q3:|||||||||||||
+Q4:||||||
+Q5:||||
+Q6:|||
+Q7:||
+Q8:|
+Q9:|
+
+Actually Queue size occurances
+Q0: 1861442
+Q1: 993102
+Q2: 499803
+Q3: 258838
+Q4: 118471
+Q5: 74255
+Q6: 54036
+Q7: 21256
+Q8: 8530
+Q9: 3201
+
+a	s	simU	anU	errU 	simR	anR	errR	simQ	anQ	errQ	simW	anW	errW	simA	simS
+2	3	0.767	0.75	2.24	4.06	3.83	5.91	2.06	1.92	7.38	2.55	2.33	9.22	1.97	1.51
+
+
+Queue Distribution graph: (each | ~= 20000 occurances)
+Q0:|||||||||||||||||||||||||||||||||||||||||||||||
+Q1:|||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q2:|||||||||||||||||||||||||||||||||||||||||
+Q3:|||||||||||||||||||||||
+Q4:||||||||||||
+Q5:|||||||
+Q6:|||||
+Q7:||||
+Q8:||
+Q9:||
+
+Actually Queue size occurances
+Q0: 920918
+Q1: 1099125
+Q2: 811152
+Q3: 449038
+Q4: 228753
+Q5: 125529
+Q6: 86236
+Q7: 79625
+Q8: 38312
+Q9: 28378
+
+a	s	simU	anU	errU 	simR	anR	errR	simQ	anQ	errQ	simW	anW	errW	simA	simS
+3	1	0.5	0.5	-0.00981	1	1.04	-3.95	0.5	0.521	-4.06	0.000509	0.0417	-98.8	2	1
+
+
+Queue Distribution graph: (each | ~= 20000 occurances)
+Q0:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q1:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q2:
+Q3:
+Q4:
+Q5:
+Q6:
+Q7:
+Q8:
+Q9:
+
+Actually Queue size occurances
+Q0: 2002430
+Q1: 2000000
+Q2: 0
+Q3: 0
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+
+a	s	simU	anU	errU 	simR	anR	errR	simQ	anQ	errQ	simW	anW	errW	simA	simS
+3	2	0.491	0.5	-1.77	1.27	1.27	0.498	0.635	0.633	0.336	0.29	0.267	8.93	2	0.982
+
+
+Queue Distribution graph: (each | ~= 20000 occurances)
+Q0:||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q1:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q2:|||||||||||||||||||
+Q3:||||
+Q4:|
+Q5:|
+Q6:|
+Q7:
+Q8:
+Q9:
+
+Actually Queue size occurances
+Q0: 2038887
+Q1: 1498358
+Q2: 379288
+Q3: 70710
+Q4: 12771
+Q5: 4484
+Q6: 396
+Q7: 0
+Q8: 0
+Q9: 0
+
+a	s	simU	anU	errU 	simR	anR	errR	simQ	anQ	errQ	simW	anW	errW	simA	simS
+3	3	0.748	0.75	-0.333	1.66	1.74	-4.62	0.825	0.869	-5.05	0.157	0.238	-33.9	2.01	1.5
+
+
+Queue Distribution graph: (each | ~= 20000 occurances)
+Q0:|||||||||||||||||||||||||||||||||||||||||||||||||||
+Q1:|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Q2:||||||||||||||||
+Q3:|
+Q4:
+Q5:
+Q6:
+Q7:
+Q8:
+Q9:
+
+Actually Queue size occurances
+Q0: 1015329
+Q1: 2694028
+Q2: 302923
+Q3: 4940
+Q4: 0
+Q5: 0
+Q6: 0
+Q7: 0
+Q8: 0
+Q9: 0
+
